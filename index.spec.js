@@ -120,7 +120,7 @@ describe('Test converting Roman Numerals to digit number', () => {
 
     // Tests for error checking of invalid parameters
     it('Should return -1 if empty string is passed in', () => {
-        equal(toRomanNumerals(""), -1)
+        equal(toDigitNumber(""), -1)
     })
 })
 
