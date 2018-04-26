@@ -18,9 +18,13 @@ function toRomanNumerals(number) {
     	}
     }
 
-    return letters;
+    return letters
+}
+
+function toDigitNumber(romanNum)  {
+	return true
 }
 
 module.exports = {
-    toRomanNumerals
+    toRomanNumerals, toDigitNumber
 }
