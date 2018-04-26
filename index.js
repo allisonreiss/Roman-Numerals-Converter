@@ -1,10 +1,10 @@
 function toRomanNumerals(number) {
-    var digit = [1, 5, 10, 50, 100, 500, 1000]
-    var roman = ["I", "V", "X", "L", "C", "D", "M"]
-
-    if (typeof(number) != 'number') {
+    if (typeof(number) != 'number' || Math.round(number) != number) {
     	return "";
     }
+
+    var digit = [1, 5, 10, 50, 100, 500, 1000]
+    var roman = ["I", "V", "X", "L", "C", "D", "M"]
 
     for (var i = 0; i < digit.length; i++) {
     	if (digit[i] == number) {

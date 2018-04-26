@@ -2,6 +2,7 @@ const { toRomanNumerals } = require('./index')
 const equal = require('assert').deepEqual
 
 describe('Test converting normal numbers to Roman Numerals', () => {
+    // Tests for basic one letter conversions
     it('Should return I when converting 1', () => {
         equal(toRomanNumerals(1), "I")
     })
@@ -24,10 +25,17 @@ describe('Test converting normal numbers to Roman Numerals', () => {
         equal(toRomanNumerals(1000), "M")
     })
 
+    // Tests for error checking of invalid parameters
     it('Should return "" if non-number is passed in', () => {
         equal(toRomanNumerals('A'), "")
     })
-    it('Should return "" if non-number is passed in', () => {
+    it('Should return "" if null is passed in', () => {
         equal(toRomanNumerals(null), "")
+    })
+    it('Should return "" if non-integer is passed in', () => {
+        equal(toRomanNumerals(12.1), "")
+    })
+    it('Should return "" if negative number is passed in', () => {
+        equal(toRomanNumerals(-10), "")
     })
 })
