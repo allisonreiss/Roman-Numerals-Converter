@@ -78,4 +78,18 @@ describe('Test converting normal numbers to Roman Numerals', () => {
     it('Should return IV when converting 900', () => {
         equal(toRomanNumerals(900), "CM")
     })
+
+    // Test for adding and subtracting values for Roman Numerals
+    it('Should return MCMLIII when converting 1953', () => {
+        equal(toRomanNumerals(1953), "MCMLIII")
+    })
+    it('Should return MMMCDXXXIV when converting 3434', () => {
+        equal(toRomanNumerals(3434), "MMMCDXXXIV")
+    })
+    it('Should return CMXCIX when converting 999', () => {
+        equal(toRomanNumerals(999), "CMXCIX")
+    })
+    it('Should return MMDLXXXIV when converting 2584', () => {
+        equal(toRomanNumerals(2584), "MMDLXXXIV")
+    })
 })
