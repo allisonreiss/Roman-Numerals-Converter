@@ -2,7 +2,7 @@ const { toRomanNumerals, toDigitNumber } = require('./index')
 const equal = require('assert').deepEqual
 
 describe('Test converting digit numbers to Roman Numerals', () => {
-    // Tests for basic one letter conversions
+    // Tests for basic conversions to one letter
     it('Should return I when converting 1', () => {
         equal(toRomanNumerals(1), "I")
     })
@@ -96,8 +96,8 @@ describe('Test converting digit numbers to Roman Numerals', () => {
 
 describe('Test converting Roman Numerals to digit number', () => {
     // Tests for basic one letter conversions
-    it('initial test for setup', () => {
-        equal(toDigitNumber(), true)
+    it('Should return 5 when converting V', () => {
+        equal(toDigitNumber("V"), 5)
     })
 })
 
