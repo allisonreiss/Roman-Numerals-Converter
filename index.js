@@ -1,5 +1,5 @@
 function toRomanNumerals(number) {
-    return true
+    return "I"
 }
 
 module.exports = {
