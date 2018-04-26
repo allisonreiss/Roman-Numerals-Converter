@@ -66,16 +66,16 @@ describe('Test converting digit numbers to Roman Numerals', () => {
     it('Should return IX when converting 9', () => {
         equal(toRomanNumerals(9), "IX")
     })
-    it('Should return IV when converting 40', () => {
+    it('Should return XL when converting 40', () => {
         equal(toRomanNumerals(40), "XL")
     })
-    it('Should return IV when converting 90', () => {
+    it('Should return XC when converting 90', () => {
         equal(toRomanNumerals(90), "XC")
     })
-    it('Should return IV when converting 400', () => {
+    it('Should return CD when converting 400', () => {
         equal(toRomanNumerals(400), "CD")
     })
-    it('Should return IV when converting 900', () => {
+    it('Should return CM when converting 900', () => {
         equal(toRomanNumerals(900), "CM")
     })
 
@@ -116,6 +116,11 @@ describe('Test converting Roman Numerals to digit number', () => {
     })
     it('Should return 1000 when converting M', () => {
         equal(toDigitNumber("M"), 1000)
+    })
+
+    // Tests for error checking of invalid parameters
+    it('Should return -1 if empty string is passed in', () => {
+        equal(toRomanNumerals(""), -1)
     })
 })
 
