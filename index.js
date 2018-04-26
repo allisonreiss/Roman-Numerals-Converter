@@ -1,7 +1,7 @@
-function foo() {
+function toRomanNumerals(number) {
     return true
 }
 
 module.exports = {
-    foo
+    toRomanNumerals
 }
