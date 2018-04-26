@@ -145,5 +145,8 @@ describe('Test converting Roman Numerals to digit number', () => {
     it('Should return 1 when converting i', () => {
         equal(toDigitNumber("i"), 1)
     })
+    it('Should return 10 when converting x', () => {
+        equal(toDigitNumber("x"), 10)
+    })
 })
 
