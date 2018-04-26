@@ -122,5 +122,11 @@ describe('Test converting Roman Numerals to digit number', () => {
     it('Should return -1 if empty string is passed in', () => {
         equal(toDigitNumber(""), -1)
     })
+    it('Should return -1 if null is passed in', () => {
+        equal(toDigitNumber(null), -1)
+    })
+    it('Should return -1 if invalid letters passed in', () => {
+        equal(toDigitNumber("A"), -1)
+    })
 })
 
