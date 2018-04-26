@@ -128,5 +128,22 @@ describe('Test converting Roman Numerals to digit number', () => {
     it('Should return -1 if invalid letters passed in', () => {
         equal(toDigitNumber("A"), -1)
     })
+    it('Should return -1 if invalid letters with valid letters passed in', () => {
+        equal(toDigitNumber("MBCVI"), -1)
+    })
+    it('Should return -1 if invalid letter with valid letter passed in', () => {
+        equal(toDigitNumber("VZ"), -1)
+    })
+    it('Should return -1 if invalid character passed in', () => {
+        equal(toDigitNumber("!"), -1)
+    })
+    it('Should return -1 if digit passed in', () => {
+        equal(toDigitNumber(10), -1)
+    })
+
+    // Tests for passing in lower case roman numeral
+    it('Should return 1 when converting i', () => {
+        equal(toDigitNumber("i"), 1)
+    })
 })
 
