@@ -46,4 +46,21 @@ describe('Test converting normal numbers to Roman Numerals', () => {
     it('Should return MMDXI when converting 2511', () => {
         equal(toRomanNumerals(2511), "MMDXI")
     })
+    it('Should return IIII when converting 4', () => {
+        equal(toRomanNumerals(4), "IIII")
+    })
+    it('Should return MMMDCCLXVI when converting 3766', () => {
+        equal(toRomanNumerals(3766), "MMMDCCLXVI")
+    })
+    it('Should return MMXVIII when converting 2018', () => {
+        equal(toRomanNumerals(2018), "MMXVIII")
+    })
+    it('Should return CLXIII when converting 163', () => {
+        equal(toRomanNumerals(163), "CLXIII")
+    })
+
+    // Test for subtracting values for Roman Numerals
+    it('Should return IV when converting 4', () => {
+        equal(toRomanNumerals(4), "IV")
+    })
 })
