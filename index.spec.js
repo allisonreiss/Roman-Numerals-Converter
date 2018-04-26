@@ -66,7 +66,16 @@ describe('Test converting normal numbers to Roman Numerals', () => {
     it('Should return IX when converting 9', () => {
         equal(toRomanNumerals(9), "IX")
     })
-    it('Should return IV when converting 4', () => {
-        equal(toRomanNumerals(4), "IV")
+    it('Should return IV when converting 40', () => {
+        equal(toRomanNumerals(40), "XL")
+    })
+    it('Should return IV when converting 90', () => {
+        equal(toRomanNumerals(90), "XC")
+    })
+    it('Should return IV when converting 400', () => {
+        equal(toRomanNumerals(400), "CD")
+    })
+    it('Should return IV when converting 900', () => {
+        equal(toRomanNumerals(900), "CM")
     })
 })
