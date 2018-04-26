@@ -43,4 +43,7 @@ describe('Test converting normal numbers to Roman Numerals', () => {
     it('Should return XV when converting 15', () => {
         equal(toRomanNumerals(15), "XV")
     })
+    it('Should return MMDXI when converting 2511', () => {
+        equal(toRomanNumerals(2511), "MMDXI")
+    })
 })
