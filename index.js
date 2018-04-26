@@ -5,8 +5,8 @@ function toRomanNumerals(number) {
     	return letters
     }
 
-    var digit = [1000, 500, 100, 50, 10, 5, 1]
-    var roman = ["M", "D", "C", "L", "X", "V", "I"]
+    var digit = [1000, 500, 100, 50, 10, 5, 4,  1]
+    var roman = ["M", "D", "C", "L", "X", "V", "IV", "I"]
 
     for (var i = 0; i < digit.length; i++) {
     	while (number >= digit[i]) {
