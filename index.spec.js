@@ -96,8 +96,26 @@ describe('Test converting digit numbers to Roman Numerals', () => {
 
 describe('Test converting Roman Numerals to digit number', () => {
     // Tests for basic one letter conversions
+    it('Should return 1 when converting I', () => {
+        equal(toDigitNumber("I"), 1)
+    })
     it('Should return 5 when converting V', () => {
         equal(toDigitNumber("V"), 5)
+    })
+    it('Should return 10 when converting X', () => {
+        equal(toDigitNumber("X"), 10)
+    })
+    it('Should return 50 when converting L', () => {
+        equal(toDigitNumber("L"), 50)
+    })
+    it('Should return 100 when converting C', () => {
+        equal(toDigitNumber("C"), 100)
+    })
+    it('Should return 500 when converting D', () => {
+        equal(toDigitNumber("D"), 500)
+    })
+    it('Should return 1000 when converting M', () => {
+        equal(toDigitNumber("M"), 1000)
     })
 })
 
