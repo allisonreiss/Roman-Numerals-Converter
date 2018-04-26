@@ -23,4 +23,11 @@ describe('Test converting normal numbers to Roman Numerals', () => {
     it('Should return M when converting 1000', () => {
         equal(toRomanNumerals(1000), "M")
     })
+
+    it('Should return "" if non-number is passed in', () => {
+        equal(toRomanNumerals('A'), "")
+    })
+    it('Should return "" if non-number is passed in', () => {
+        equal(toRomanNumerals(null), "")
+    })
 })
