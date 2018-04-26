@@ -1,5 +1,5 @@
 function toRomanNumerals(number) {
-    if (typeof(number) != 'number' || Math.round(number) != number) {
+    if (typeof(number) != 'number' || Math.round(number) != number || number < 0) {
     	return "";
     }
 

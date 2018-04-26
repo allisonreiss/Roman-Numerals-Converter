@@ -38,4 +38,9 @@ describe('Test converting normal numbers to Roman Numerals', () => {
     it('Should return "" if negative number is passed in', () => {
         equal(toRomanNumerals(-10), "")
     })
+
+    // Tests for adding values for Roman Numerals
+    it('Should return XV when converting 15', () => {
+        equal(toRomanNumerals(15), "XV")
+    })
 })
