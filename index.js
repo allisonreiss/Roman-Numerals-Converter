@@ -21,23 +21,27 @@ function toRomanNumerals(number) {
     return letters
 }
 
-function toDigitNumber(romanNum)  {
-    if (!romanNum) {
+function toDigitNumber(str)  {
+    if (!str) {
     	return -1
     }
 
-    if (/^[MDCLXVImdclxvi]+$/.test(romanNum) == false) {
+    if (/^[MDCLXVImdclxvi]+$/.test(str) == false) {
     	return -1
     }
 
-    romanNum = romanNum.toUpperCase()
+    str = str.toUpperCase()
 
+    var number = 0
+    var numRemove = 0
 	var digit = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]
     var roman = ["M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"]
 
 	for (var i = 0; i < roman.length; i++) {
-		if (roman[i] == romanNum) {
-			var number = digit[i]
+		if (str.startsWith(roman[i])) {
+			number = number + digit[i]
+			numRemove = roman[i].length
+			str = str.substr(numRemove)
 		}
 	}
 
