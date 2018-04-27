@@ -38,7 +38,7 @@ function toDigitNumber(str)  {
     var roman = ["M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"]
 
 	for (var i = 0; i < roman.length; i++) {
-		if (str.startsWith(roman[i])) {
+		while (str.startsWith(roman[i])) {
 			number = number + digit[i]
 			numRemove = roman[i].length
 			str = str.substr(numRemove)

@@ -156,6 +156,38 @@ describe('Test converting Roman Numerals to digit number', () => {
     it('Should return 11 when converting XI', () => {
         equal(toDigitNumber("XI"), 11)
     })
+    it('Should return 1666 when converting MDCLXVI', () => {
+        equal(toDigitNumber("MDCLXVI"), 1666)
+    })
+    it('Should return 3117 when converting MMMCXVII', () => {
+        equal(toDigitNumber("MMMCXVII"), 3117)
+    })
+    it('Should return 35 when converting XXXV', () => {
+        equal(toDigitNumber("XXXV"), 35)
+    })
+    it('Should return 73 when converting LXXIII', () => {
+        equal(toDigitNumber("LXXIII"), 73)
+    })
+    it('Should return 2011 when converting mmxi', () => {
+        equal(toDigitNumber("mmxi"), 2011)
+    })
+
+    // Tests for subtracting letters
+    it('Should return 4 when converting IV', () => {
+        equal(toDigitNumber("IV"), 4)
+    })
+    it('Should return 909 when converting CMIX', () => {
+        equal(toDigitNumber("CMIX"), 909)
+    })
+    it('Should return 444 when converting CDXLIV', () => {
+        equal(toDigitNumber("CDXLIV"), 444)
+    })
+    it('Should return 940 when converting CMXL', () => {
+        equal(toDigitNumber("CMXL"), 940)
+    })
+    it('Should return 94 when converting XCIV', () => {
+        equal(toDigitNumber("XCIV"), 94)
+    })
 
 })
 
