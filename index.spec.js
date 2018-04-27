@@ -189,5 +189,21 @@ describe('Test converting Roman Numerals to digit number', () => {
         equal(toDigitNumber("XCIV"), 94)
     })
 
+    // Tests for subtracting and adding letters
+    it('Should return 4900 when converting MMMMCM', () => {
+        equal(toDigitNumber("MMMMCM"), 4900)
+    })
+    it('Should return 3543 when converting mmmdxliii', () => {
+        equal(toDigitNumber("mmmdxliii"), 3543)
+    })
+    it('Should return 39 when converting XXXIX', () => {
+        equal(toDigitNumber("XXXIX"), 39)
+    })
+    it('Should return 1982 when converting MCMLXXXII', () => {
+        equal(toDigitNumber("MCMLXXXII"), 1982)
+    })
+    it('Should return 147 when converting CXLVII', () => {
+        equal(toDigitNumber("CXLVII"), 147)
+    })
 })
 
