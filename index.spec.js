@@ -148,5 +148,14 @@ describe('Test converting Roman Numerals to digit number', () => {
     it('Should return 10 when converting x', () => {
         equal(toDigitNumber("x"), 10)
     })
+    it('Should return 500 when converting d', () => {
+        equal(toDigitNumber("d"), 500)
+    })
+
+    // Tests for adding letters
+    it('Should return 11 when converting XI', () => {
+        equal(toDigitNumber("XI"), 11)
+    })
+
 })
 
